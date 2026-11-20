@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>復習ルート｜参考書を増やす前に、復習の順番を整える</title>
+<meta name="description" content="復習ルートは、中学生・高校生向けに、つまずいた単元に合わせた復習教材（A4・PDF）を作る個人運営の教材事業です。初回1,500円。ご相談・ご購入はココナラで受け付けています。">
+<meta name="theme-color" content="#1d5b47">
+<!-- 公開時に正式URLへ差し替え（未定の間は canonical / og:url / og:image を出さない） -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="復習ルート">
+<meta property="og:title" content="復習ルート｜参考書を増やす前に、復習の順番を整える。">
+<meta property="og:description" content="つまずいた単元に合わせて、要点・例題・演習・初見問題をA4のPDFにまとめます。初回1,500円、ご相談はココナラで。">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231d5b47'/%3E%3Cpath d='M8 22 L14 14 L19 18 L24 10' stroke='%23fff' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --green:#1d5b47; --green-dark:#14402f; --green-soft:#eaf2ee; --green-line:#c9ddd3;
+    --ink:#1f2a26; --ink-sub:#4a5752; --line:#dfe5e2; --bg:#fff; --bg-alt:#f6f8f7;
+    --note-bg:#fff8e6; --note-line:#e7cf8f; --radius:10px; --wrap:1040px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth;scroll-padding-top:76px;-webkit-text-size-adjust:100%}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic UI","Meiryo",sans-serif;font-size:17px;line-height:1.85;letter-spacing:.02em;overflow-wrap:anywhere}
+  img,svg{max-width:100%;display:block}
+  a{color:var(--green);text-underline-offset:3px}
+  a:hover{color:var(--green-dark)}
+  :focus-visible{outline:3px solid #b47c00;outline-offset:3px;border-radius:4px}
+  .wrap{max-width:var(--wrap);margin:0 auto;padding:0 20px}
+  .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+  .skip{position:absolute;left:12px;top:-60px;background:var(--green);color:#fff;padding:10px 16px;border-radius:6px;z-index:100;text-decoration:none}
+  .skip:focus{top:12px;color:#fff}
+
+  .site-header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.97);border-bottom:1px solid var(--line)}
+  .site-header .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px}
+  .brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);font-weight:700;font-size:19px;letter-spacing:.06em;min-height:44px}
+  .brand-mark{width:30px;height:30px}
+  .gnav ul{display:flex;gap:4px;list-style:none;margin:0;padding:0}
+  .gnav a{display:flex;align-items:center;min-height:44px;padding:0 12px;border-radius:6px;text-decoration:none;color:var(--ink);font-size:15px;font-weight:500}
+  .gnav a:hover{background:var(--green-soft);color:var(--green-dark)}
+  .menu-btn{display:none;align-items:center;gap:8px;border:1px solid var(--line);background:#fff;border-radius:8px;padding:8px 12px;font:inherit;font-size:15px;color:var(--ink);cursor:pointer;min-height:44px}
+  .menu-btn .bars{width:18px;height:2px;background:currentColor;position:relative}
+  .menu-btn .bars::before,.menu-btn .bars::after{content:"";position:absolute;left:0;width:18px;height:2px;background:currentColor}
+  .menu-btn .bars::before{top:-6px}.menu-btn .bars::after{top:6px}
+  @media (max-width:860px){
+    .menu-btn{display:inline-flex}
+    .gnav{position:absolute;left:0;right:0;top:64px;background:#fff;border-bottom:1px solid var(--line);display:none;box-shadow:0 8px 20px rgba(0,0,0,.06)}
+    .gnav.open{display:block}
+    .gnav ul{flex-direction:column;padding:8px 12px 16px}
+    .gnav a{padding:0 12px;font-size:16px;border-bottom:1px solid var(--line);border-radius:0;min-height:52px}
+  }
+
+  section{padding:72px 0}
+  section.alt{background:var(--bg-alt)}
+  .eyebrow{display:inline-block;font-size:13px;font-weight:700;letter-spacing:.16em;color:var(--green);margin:0 0 6px}
+  h1,h2,h3{line-height:1.45;color:var(--ink);margin:0}
+  h2{font-size:clamp(24px,4vw,32px);margin-bottom:18px}
+  h3{font-size:19px;margin-bottom:8px}
+  .lead{font-size:17px;color:var(--ink-sub);max-width:40em;margin:0 0 28px}
+  p{margin:0 0 1em}
+
+  .hero{padding:56px 0 64px;background:linear-gradient(180deg,#f3f8f5 0%,#fff 100%);border-bottom:1px solid var(--line)}
+  .hero h1{font-size:clamp(28px,5.6vw,46px);line-height:1.4;letter-spacing:.03em;margin-bottom:18px}
+  .hero h1 .br{display:inline-block}
+  .hero .intro{font-size:18px;color:var(--ink-sub);max-width:36em;margin-bottom:24px}
+  .keyfacts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:0 0 28px;padding:0}
+  .keyfacts div{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:12px 14px}
+  .keyfacts dt{font-size:13px;color:var(--ink-sub);font-weight:700}
+  .keyfacts dd{margin:2px 0 0;font-weight:700;font-size:17px}
+  .btns{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:52px;padding:12px 24px;border-radius:8px;font-weight:700;font-size:16px;text-decoration:none;border:2px solid var(--green);text-align:center}
+  .btn-primary{background:var(--green);color:#fff}
+  .ph{display:inline-block}
+  .btn-primary:hover{background:var(--green-dark);border-color:var(--green-dark);color:#fff}
+  .btn-ghost{background:#fff;color:var(--green)}
+  .btn-ghost:hover{background:var(--green-soft)}
+  .cta-note{font-size:14px;color:var(--ink-sub);margin:10px 0 0}
+  @media (max-width:860px){
+    .keyfacts{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .btns .btn{flex:1 1 100%}
+  }
+
+  .cards{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+  .cards li{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:20px}
+  .cards li p{margin:0;color:var(--ink-sub);font-size:16px}
+  @media (max-width:860px){.cards{grid-template-columns:1fr}}
+
+  .contents{list-style:none;margin:0 0 24px;padding:0;display:grid;gap:12px;max-width:44em}
+  .contents li{display:grid;grid-template-columns:32px 1fr;gap:12px;align-items:start;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:14px 16px}
+  .contents .n{width:32px;height:32px;border-radius:6px;background:var(--green-soft);color:var(--green-dark);font-weight:700;display:flex;align-items:center;justify-content:center}
+  .contents b{display:block}
+  .contents small{display:block;color:var(--ink-sub);font-size:15px}
+
+  .sample{border:2px dashed var(--note-line);background:var(--note-bg);border-radius:var(--radius);padding:18px;max-width:44em}
+  .sample-label{display:inline-block;background:#7a5a00;color:#fff;font-size:13px;font-weight:700;padding:2px 10px;border-radius:4px;margin-bottom:8px}
+  .table-scroll{overflow-x:auto;background:#fff;border:1px solid var(--line);border-radius:6px}
+  .sample table{width:100%;border-collapse:collapse;font-size:15px;min-width:300px}
+  .sample th,.sample td{border-bottom:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+  .sample th{background:var(--bg-alt)}
+  .sample caption{text-align:left;font-weight:700;padding:10px 10px 4px}
+  .sample .small{font-size:14px;color:#5a4a1a;margin:10px 0 0}
+
+  .flow{list-style:none;margin:0;padding:0;display:grid;counter-reset:f;max-width:760px}
+  .flow li{display:grid;grid-template-columns:48px 1fr;gap:16px;counter-increment:f;position:relative;padding-bottom:26px}
+  .flow li:last-child{padding-bottom:0}
+  .flow li::before{content:counter(f);width:48px;height:48px;border-radius:50%;border:2px solid var(--green);color:var(--green);background:#fff;font-weight:700;font-size:19px;display:flex;align-items:center;justify-content:center;position:relative;z-index:1}
+  .flow li::after{content:"";position:absolute;left:23px;top:48px;bottom:0;width:2px;background:var(--green-line)}
+  .flow li:last-child::after{display:none}
+  .flow h3{margin:8px 0 4px;font-size:18px}
+  .flow p{margin:0;color:var(--ink-sub);font-size:16px}
+
+  .terms{margin:0 0 16px;border:1px solid var(--line);border-radius:var(--radius);background:#fff;overflow:hidden;max-width:44em}
+  .terms div{display:grid;grid-template-columns:9em 1fr;border-bottom:1px solid var(--line)}
+  .terms div:last-child{border-bottom:none}
+  .terms dt{background:var(--green-soft);padding:12px 16px;font-weight:700;font-size:15px;color:var(--green-dark)}
+  .terms dd{margin:0;padding:12px 16px;font-size:16px}
+  .terms .price{font-size:22px;font-weight:700;color:var(--green-dark)}
+  .fine{font-size:14px;color:var(--ink-sub);max-width:44em}
+  @media (max-width:560px){.terms div{grid-template-columns:1fr}.terms dt{padding:8px 16px}}
+
+  .faq{max-width:820px;display:grid;gap:10px}
+  .faq details{background:#fff;border:1px solid var(--line);border-radius:var(--radius)}
+  .faq summary{cursor:pointer;list-style:none;padding:14px 48px 14px 18px;font-weight:700;position:relative;min-height:52px;display:flex;align-items:center;gap:10px}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary .q{color:var(--green);font-size:18px;flex:0 0 auto}
+  .faq summary::after{content:"＋";position:absolute;right:18px;top:50%;transform:translateY(-50%);color:var(--green);font-weight:700}
+  .faq details[open] summary::after{content:"－"}
+  .faq .a{padding:0 18px 18px 44px}
+  .faq .a p:last-child{margin-bottom:0}
+
+  .policy{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;max-width:52em}
+  .steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;counter-reset:s}
+  .steps li{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:16px;counter-increment:s}
+  .steps li::before{content:counter(s);display:inline-flex;width:28px;height:28px;border-radius:50%;background:var(--green);color:#fff;font-weight:700;align-items:center;justify-content:center;margin-bottom:6px}
+  .steps h3{font-size:17px;margin:0 0 4px}
+  .steps p{margin:0 0 8px;font-size:15px;color:var(--ink-sub)}
+  .status{display:inline-block;font-size:13px;font-weight:700;padding:2px 10px;border-radius:999px;border:1px solid var(--green-line);background:var(--green-soft);color:var(--green-dark)}
+  .status.now{background:var(--green);color:#fff;border-color:var(--green)}
+  @media (max-width:860px){.steps{grid-template-columns:1fr}}
+  .policy li{background:#fff;border:1px solid var(--line);border-left:4px solid var(--green);border-radius:8px;padding:14px 16px;font-size:16px}
+  @media (max-width:700px){.policy{grid-template-columns:1fr}}
+
+  .sns{list-style:none;margin:0 0 12px;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;max-width:44em}
+  .sns li{background:#fff;border:1px solid var(--line);border-radius:8px;padding:10px 14px;font-size:16px}
+  .sns b{display:inline-block;min-width:6.5em}
+  @media (max-width:560px){.sns{grid-template-columns:1fr}}
+
+  .final{background:var(--green);color:#fff;border-radius:14px;padding:40px 28px;text-align:center}
+  .final h2{color:#fff}
+  .final p{color:#e6f0ec;max-width:34em;margin:0 auto 20px}
+  .final .btn{background:#fff;color:var(--green-dark);border-color:#fff;font-size:17px;min-width:min(100%,340px)}
+  .final .btn:hover{background:var(--green-soft)}
+  .final .url{display:block;margin-top:14px;font-size:14px;color:#d4e5dd;word-break:break-all}
+  .final :focus-visible{outline-color:#ffd24d}
+
+  .site-footer{border-top:1px solid var(--line);padding:28px 0;font-size:14px;color:var(--ink-sub)}
+  .site-footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+  .site-footer p{margin:0}
+
+  .sticky-cta{display:none}
+  @media (max-width:860px){
+    .sticky-cta{display:block;position:fixed;left:0;right:0;bottom:0;z-index:40;padding:8px 16px calc(8px + env(safe-area-inset-bottom));background:rgba(255,255,255,.97);border-top:1px solid var(--line)}
+    .sticky-cta .btn{width:100%;min-height:48px;font-size:15px}
+    body{padding-bottom:72px}
+  }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">本文へスキップ</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="復習ルート ページの先頭へ">
+      <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="7" fill="#1d5b47"/><path d="M8 22 L14 14 L19 18 L24 10" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/><circle cx="24" cy="10" r="2.6" fill="#fff"/></svg>
+      復習ルート
+    </a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="gnav"><span class="bars" aria-hidden="true"></span>メニュー</button>
+    <nav class="gnav" id="gnav" aria-label="ページ内メニュー">
+      <ul>
+        <li><a href="#idea">考え方</a></li>
+        <li><a href="#contents">教材の中身</a></li>
+        <li><a href="#flow">依頼の流れ</a></li>
+        <li><a href="#terms">料金と条件</a></li>
+        <li><a href="#faq">よくある質問</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero" id="top" aria-labelledby="hero-title">
+    <div class="wrap">
+      <p class="eyebrow">中学生・高校生のための復習教材</p>
+      <h1 id="hero-title"><span class="br">参考書を増やす前に、</span><span class="br">復習の順番を整える。</span></h1>
+      <p class="intro">中学生・高校生の数学・英語。いまのつまずきに合わせて、要点・例題・順番どおりの演習・初見問題を、A4のPDF教材にまとめます。</p>
+      <dl class="keyfacts" aria-label="教材の概要">
+        <div><dt>対象</dt><dd>中学生・高校生</dd></div>
+        <div><dt>教科</dt><dd>数学・英語</dd></div>
+        <div><dt>初回の教材</dt><dd>1,500円</dd></div>
+        <div><dt>お届け</dt><dd>3日（予定）</dd></div>
+      </dl>
+      <div class="btns">
+        <a class="btn btn-primary" href="https://coconala.com/services/4519485" target="_blank" rel="noopener noreferrer"><span><span class="ph">対応できる単元を</span><span class="ph">見積り相談で確認する</span></span><span aria-hidden="true">↗</span><span class="sr-only">（ココナラのページが新しいタブで開きます）</span></a>
+        <a class="btn btn-ghost" href="#contents">教材の中身と進め方を見る</a>
+      </div>
+      <p class="cta-note">ご相談・ご購入・お受け取りは、すべてココナラ（外部サイト）で行います。購入前の見積り相談は無料です。</p>
+    </div>
+  </section>
+
+  <section id="worries" aria-labelledby="worries-title">
+    <div class="wrap">
+      <p class="eyebrow">こんなとき</p>
+      <h2 id="worries-title">テストのあと、こんなことはありませんか</h2>
+      <ul class="cards">
+        <li><h3>何から復習すればいいか分からない</h3><p>間違えた問題が多くて、どこから手をつければいいか決められない。</p></li>
+        <li><h3>解説を読んでも身につかない</h3><p>答えを見て分かったつもりでも、似た問題になると解けない。</p></li>
+        <li><h3>問題集が今のつまずきに合わない</h3><p>市販の問題集は範囲が広く、苦手なところだけを練習しにくい。</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="idea" class="alt" aria-labelledby="idea-title">
+    <div class="wrap">
+      <p class="eyebrow">復習ルートの考え方</p>
+      <h2 id="idea-title">自分に必要な勉強を、順番まで整理する</h2>
+      <p class="lead">勉強のやり方と、いまの理解度を分けて確かめ、取り組む単元と順番を決める。その考え方で、サービスを準備しています。性格や能力の分類、合格の可能性の判定はしません。</p>
+      <ol class="steps">
+        <li><h3>いまの勉強タイプ診断</h3><p>計画・解き直し・継続など、この2週間の勉強のやり方から「いまのタイプ」を出します。やり方が変われば、タイプも変わります。</p><span class="status">準備中</span></li>
+        <li><h3>つまずき単元チェック</h3><p>数学・英語で、いま解けるところと、まだ確かめていないところを分けます。最初は中学2年生の8問から。</p><span class="status">準備中</span></li>
+        <li><h3>オーダーメイド復習教材</h3><p>苦手な単元に合わせて、問題と解く順番を決めた教材を作ります。</p><span class="status now">受付中（初回1,500円）</span></li>
+        <li><h3>目標に向けた学習の進め方</h3><p>目標までの学習の順番や、教材の使い方のご提案です。</p><span class="status">検討中</span></li>
+      </ol>
+      <p class="fine" style="margin-top:14px">いまご利用いただけるのは「3. 復習教材」です。1・2・4は準備中・検討中のため、現在は受け付けていません。</p>
+    </div>
+  </section>
+
+  <section id="contents" aria-labelledby="contents-title">
+    <div class="wrap">
+      <p class="eyebrow">教材の中身</p>
+      <h2 id="contents-title">つまずきに合わせて、1冊にまとめます</h2>
+      <p class="lead">ご希望の学年・教科・単元と、確認問題への回答をもとに作ります。お届けはA4サイズのPDFです。</p>
+      <ol class="contents">
+        <li><span class="n" aria-hidden="true">1</span><div><b>要点</b><small>復習する範囲で押さえるポイント</small></div></li>
+        <li><span class="n" aria-hidden="true">2</span><div><b>例題</b><small>解き方の手順が分かる例</small></div></li>
+        <li><span class="n" aria-hidden="true">3</span><div><b>順番を付けた演習（4問または8問）</b><small>解く順番どおりに並べた練習問題</small></div></li>
+        <li><span class="n" aria-hidden="true">4</span><div><b>初見問題</b><small>復習のあとに、はじめて見る問題で理解を確かめる</small></div></li>
+        <li><span class="n" aria-hidden="true">5</span><div><b>解答・採点基準</b><small>家庭で丸つけができるように掲載</small></div></li>
+      </ol>
+      <div class="sample" role="note" aria-label="教材の構成の例（説明用サンプル）">
+        <span class="sample-label">説明用サンプル</span>
+        <div class="table-scroll">
+          <table>
+            <caption>例）中2数学・一次関数でつまずいた場合の並び方</caption>
+            <thead><tr><th scope="col">順番</th><th scope="col">内容</th><th scope="col">ねらい</th></tr></thead>
+            <tbody>
+              <tr><td>1</td><td>要点：変化の割合と傾き</td><td>式の意味を確認する</td></tr>
+              <tr><td>2</td><td>例題：2点を通る直線の式</td><td>解き方の手順をつかむ</td></tr>
+              <tr><td>3〜6</td><td>演習（順番付き）</td><td>易しい問題から段階的に解く</td></tr>
+              <tr><td>7</td><td>初見問題</td><td>理解できたかを確かめる</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="small">このページの説明のために作った例です。実際の内容・問題数・並び方は、確認問題への回答によって変わります。</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="flow" class="alt" aria-labelledby="flow-title">
+    <div class="wrap">
+      <p class="eyebrow">依頼の流れ</p>
+      <h2 id="flow-title">ご相談からお受け取りまで</h2>
+      <p class="lead">購入する前に、対応できるかどうかとお届け予定日を確認できます。</p>
+      <ol class="flow">
+        <li><div><h3>ココナラの出品ページを見る</h3><p>教材の内容と条件をご確認ください。</p></div></li>
+        <li><div><h3>見積り相談で、学年・教科・単元を伝える</h3><p>見積り相談は無料です。お名前や学校名は不要です。</p></div></li>
+        <li><div><h3>対応できるか、お届け予定日を確認する</h3><p>対応が難しい内容は、購入前にお伝えします。</p></div></li>
+        <li><div><h3>確認問題に答えて、ココナラで購入する</h3><p>確認問題の回答をもとに教材を作ります。回答していただく時期は、見積り相談でご案内します。お支払いはココナラの決済で行います。</p></div></li>
+        <li><div><h3>トークルームでPDFを受け取る</h3><p>お届けは購入後3日が目安です。</p></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="terms" aria-labelledby="terms-title">
+    <div class="wrap">
+      <p class="eyebrow">料金と条件</p>
+      <h2 id="terms-title">料金と条件</h2>
+      <dl class="terms">
+        <div><dt>初回の教材</dt><dd><span class="price">1,500円</span></dd></div>
+        <div><dt>お届け</dt><dd>購入後3日が目安（予定日は見積り相談でお知らせします）</dd></div>
+        <div><dt>形式</dt><dd>A4サイズのPDF（ココナラのトークルームでお渡しします）</dd></div>
+        <div><dt>修正</dt><dd>教材の誤記や、購入前に確認した内容との違いは、トークルームで確認のうえ修正版をお届けします。</dd></div>
+        <div><dt>キャンセル</dt><dd>取引の状況に応じて、ココナラ内でご相談ください。</dd></div>
+        <div><dt>利用の範囲</dt><dd>購入された方のご家庭内での学習・印刷に限ります。配布・転載・販売はできません。</dd></div>
+      </dl>
+      <p class="fine">条件の最新の内容は、ココナラの出品ページの表示が正となります。</p>
+    </div>
+  </section>
+
+  <section id="faq" class="alt" aria-labelledby="faq-title">
+    <div class="wrap">
+      <p class="eyebrow">よくある質問</p>
+      <h2 id="faq-title">よくある質問</h2>
+      <div class="faq">
+        <details><summary><span class="q" aria-hidden="true">Q</span>中学生も高校生も頼めますか？</summary>
+          <div class="a"><p>はい。数学・英語を中心に受け付けています。高校の内容は学校によって進み方が違うため、見積り相談で履修している科目名（例：数学Ⅰ、英語コミュニケーションⅠ）と、授業で習い終わった範囲を教えてください。対応できるかをお答えします。</p></div></details>
+        <details><summary><span class="q" aria-hidden="true">Q</span>希望の単元や難しさを選べますか？</summary>
+          <div class="a"><p>見積り相談で単元をお知らせください。難しさは、確認問題への回答をもとに決めます。対応できない単元は、購入前にお伝えします。</p></div></details>
+        <details><summary><span class="q" aria-hidden="true">Q</span>支払い方法と受け取り方は？</summary>
+          <div class="a"><p>お支払いはココナラの決済で行います。教材はA4サイズのPDFで、ココナラのトークルームからお受け取りいただけます。紙の郵送は行っていません。ご家庭のプリンターやコンビニのプリントサービスで印刷できます。</p></div></details>
+        <details><summary><span class="q" aria-hidden="true">Q</span>間違いを見つけたら？キャンセルはできますか？</summary>
+          <div class="a"><p>教材の誤記などは、トークルームで該当ページと箇所をお知らせください。確認のうえ修正版をお届けします。キャンセルは、取引の状況に応じてココナラ内でご相談ください。</p></div></details>
+        <details><summary><span class="q" aria-hidden="true">Q</span>「いまの勉強タイプ診断」は受けられますか？</summary>
+          <div class="a"><p>「いまの勉強タイプ診断」と「つまずき単元チェック」は、現在準備中で、受け付けていません。教材の購入に診断は必要ありません。</p></div></details>
+        <details><summary><span class="q" aria-hidden="true">Q</span>保護者が相談してもいいですか？名前や学校名は必要ですか？</summary>
+          <div class="a"><p>保護者の方からのご相談も歓迎しています。お名前・学校名・成績表・答案の画像は必要ありません。学年・教科・気になる単元をお知らせください。</p></div></details>
+      </div>
+    </div>
+  </section>
+
+  <section id="policy" aria-labelledby="policy-title">
+    <div class="wrap">
+      <p class="eyebrow">運営方針</p>
+      <h2 id="policy-title">安心してご相談いただくために</h2>
+      <ul class="policy">
+        <li>対応できない内容は、購入前にお伝えします。</li>
+        <li>点数や合否などの成果はお約束していません。</li>
+        <li>ご相談で、お名前・学校名・連絡先などはお聞きしません。</li>
+        <li>中学生・高校生の利用に配慮し、こちらから勧誘のメッセージは送りません。</li>
+      </ul>
+
+      <h3 style="margin-top:40px">SNSでのご質問</h3>
+      <p class="lead" style="margin-bottom:14px">ご購入前のちょっとした質問は、SNSのメッセージでも受け付けています。ご相談・ご購入の正式な窓口はココナラです。</p>
+      <ul class="sns">
+        <li><b>X</b>@Sei747e</li>
+        <li><b>Instagram</b>@fukushu_route</li>
+        <li><b>TikTok</b>@fukusyu_route</li>
+        <li><b>note</b>@fukusyu_route</li>
+      </ul>
+      <p class="fine">年齢によっては、SNSのメッセージ機能が使えない場合があります。その場合は、保護者の方からご連絡ください。お名前・学校名・答案の画像は送らないでください。</p>
+    </div>
+  </section>
+
+  <section id="cta" class="alt" aria-labelledby="cta-title">
+    <div class="wrap">
+      <div class="final">
+        <h2 id="cta-title">まずは、対応できるかを確認する</h2>
+        <p>ご相談・ご購入はココナラで受け付けています。見積り相談は無料で、購入するかどうかは内容を確認してから決められます。</p>
+        <a class="btn" href="https://coconala.com/services/4519485" target="_blank" rel="noopener noreferrer">ココナラの出品ページへ<span aria-hidden="true">↗</span><span class="sr-only">（新しいタブで開きます）</span></a>
+        <span class="url">coconala.com/services/4519485</span>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>復習ルート｜個人運営の教材事業</p>
+    <p>© 復習ルート</p>
+  </div>
+</footer>
+
+<div class="sticky-cta">
+  <a class="btn btn-primary" href="https://coconala.com/services/4519485" target="_blank" rel="noopener noreferrer">ココナラで見積り相談を確認する<span aria-hidden="true">↗</span><span class="sr-only">（新しいタブで開きます）</span></a>
+</div>
+
+<script>
+(function(){
+  var btn=document.querySelector('.menu-btn');
+  var nav=document.getElementById('gnav');
+  if(!btn||!nav)return;
+  function close(){nav.classList.remove('open');btn.setAttribute('aria-expanded','false');}
+  btn.addEventListener('click',function(){
+    var open=nav.classList.toggle('open');
+    btn.setAttribute('aria-expanded',open?'true':'false');
+  });
+  nav.addEventListener('click',function(e){if(e.target.closest('a'))close();});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&nav.classList.contains('open')){close();btn.focus();}});
+})();
+</script>
+</body>
+</html>
