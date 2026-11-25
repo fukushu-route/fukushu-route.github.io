@@ -249,22 +249,50 @@
         <li><span class="n" aria-hidden="true">4</span><div><b>初見問題</b><small>復習のあとに、はじめて見る問題で理解を確かめる</small></div></li>
         <li><span class="n" aria-hidden="true">5</span><div><b>解答・採点基準</b><small>家庭で丸つけができるように掲載</small></div></li>
       </ol>
-      <div class="sample" role="note" aria-label="教材の構成の例（説明用サンプル）">
-        <span class="sample-label">説明用サンプル</span>
-        <div class="table-scroll">
-          <table>
-            <caption>例）中2数学・一次関数でつまずいた場合の並び方</caption>
-            <thead><tr><th scope="col">順番</th><th scope="col">内容</th><th scope="col">ねらい</th></tr></thead>
-            <tbody>
-              <tr><td>1</td><td>要点：変化の割合と傾き</td><td>式の意味を確認する</td></tr>
-              <tr><td>2</td><td>例題：2点を通る直線の式</td><td>解き方の手順をつかむ</td></tr>
-              <tr><td>3〜6</td><td>演習（順番付き）</td><td>易しい問題から段階的に解く</td></tr>
-              <tr><td>7</td><td>初見問題</td><td>理解できたかを確かめる</td></tr>
-            </tbody>
-          </table>
-        </div>
-        <p class="small">このページの説明のために作った例です。実際の内容・問題数・並び方は、確認問題への回答によって変わります。</p>
-      </div>
+      <article class="sample" id="sample" aria-labelledby="sample-title">
+        <span class="sample-label">公開サンプル</span>
+        <h3 id="sample-title">中2数学｜2点から一次関数の式を求める</h3>
+        <p class="small">架空の回答をもとにした教材の一例です。実際の問題や復習順は、確認問題への回答に合わせて作ります。</p>
+        <h4>つまずき：傾きの分子と分母が逆になる</h4>
+        <p>点 A（2, 3）から点 B（4, 7）へ進むと、横に +2、縦に +4。横の 2 を先に割らず、<strong>縦の増加量 ÷ 横の増加量</strong>で考えます。</p>
+        <figure style="margin:1em 0;background:#fff;border:1px solid #c9ddd3;border-radius:8px;padding:12px">
+          <svg viewBox="0 0 290 235" width="380" role="img" aria-label="A（2, 3）から右に2、上に4移動するとB（4, 7）に着くグラフ">
+            <path d="M40 20V220H260" fill="none" stroke="#39443e" stroke-width="2"/>
+            <path d="M60 220L210 32.5" fill="none" stroke="#1d5b47" stroke-width="3"/>
+            <path d="M120 145H200V45" fill="none" stroke="#945700" stroke-width="2.5" stroke-dasharray="5 3"/>
+            <g fill="#1d5b47"><circle cx="120" cy="145" r="4"/><circle cx="200" cy="45" r="4"/></g>
+            <g fill="#1f2a26" font-size="13"><text x="66" y="139">A (2, 3)</text><text x="207" y="45">B (4, 7)</text><text x="131" y="164">横 +2</text><text x="207" y="99">縦 +4</text><text x="29" y="20">y</text><text x="265" y="225">x</text><text x="27" y="235">0</text></g>
+          </svg>
+          <figcaption><strong>傾き = 4 ÷ 2 = 2</strong></figcaption>
+        </figure>
+        <h4>例題：AとBを通る直線の式</h4>
+        <ol>
+          <li>傾きが 2 なので、式を y = 2x + b と置く。</li>
+          <li>A（2, 3）を代入する。3 = 2 × 2 + b より b = −1。</li>
+          <li>B（4, 7）で確かめる。2 × 4 − 1 = 7。答えは <strong>y = 2x − 1</strong>。</li>
+        </ol>
+        <h4>練習：切片が見える問題から、負の傾き・分数へ</h4>
+        <p>次の2点を通る直線の式を求めましょう。</p>
+        <ol>
+          <li>（0, −2）、（2, 4）</li>
+          <li>（1, 7）、（4, 1）</li>
+          <li>（−2, 3）、（2, 5）</li>
+          <li>（−3, −1）、（1, −9）</li>
+        </ol>
+        <h4>別の日に解く初見問題</h4>
+        <p>x = 2 のとき y = 1、x = 6 のとき y = −7 となる一次関数の式を、例題を見ずに求めましょう。</p>
+        <details class="table-scroll" style="padding:10px 14px">
+          <summary style="cursor:pointer;font-weight:700">解答と見直しの目安を見る</summary>
+          <ol>
+            <li>y = 3x − 2（傾き 6 ÷ 2 = 3）</li>
+            <li>y = −2x + 9（傾き −6 ÷ 3 = −2）</li>
+            <li>y = ½x + 4（傾き 2 ÷ 4 = ½）</li>
+            <li>y = −2x − 7（傾き −8 ÷ 4 = −2）</li>
+          </ol>
+          <p><strong>初見問題：</strong>傾きは −8 ÷ 4 = −2。1 = −2 × 2 + b より b = 5。答えは y = −2x + 5。</p>
+          <p><strong>採点の目安：</strong>同じ式を表していれば正解です。傾きが逆数になったら「縦 ÷ 横」を、傾きが合っていて式が違ったら、点を代入する行を見直しましょう。最後にもう一方の点で確かめます。</p>
+        </details>
+      </article>
     </div>
   </section>
 
